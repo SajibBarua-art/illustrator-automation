@@ -1,0 +1,18 @@
+{
+  "manifest_version": 3,
+  "name": "Alamy SuperTag Automator",
+  "version": "1.0",
+  "description": "Automatically adds up to 10 supertags to selected images on Alamy.",
+  "permissions": [
+    "storage"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["*://*.alamy.com/*", "*://alamy.com/*"],
+      "js": ["content.js"]
+    }
+  ],
+  "action": {
+    "default_title": "Alamy SuperTag Automator"
+  }
+}
